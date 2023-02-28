@@ -131,12 +131,18 @@ function handleParticles(){
             if(distancia < 100){
                 //cuando queremos dibujar algo nuevo en nuestro lienzo
                 ctx.beginPath();
-                //color del borde
+                //color del borde y define la linea que luego vamos a dibujar con el metodo stroke()
                 ctx.strokeStyle = particulasArray[i].color;
+                //grososr de la linea que vamos a ir dibujando 
                 ctx.lineWidth = 0.2//particulasArray[i].size/20;
+                //mueve el lapiz de un punto a otro desde el eje x en mi caso hasta el punto y
+                //que estan gaurdados en el objeto particula creado el caul recorro y asigno 
                 ctx.moveTo(particulasArray[i].x, particulasArray[i].y,);
+                //crea una linea entre dos puntos x e y y mueve el lapiz generandola
                 ctx.lineTo(particulasArray[j].x, particulasArray[j].y,);
+                //dibuja una linea previamente definida 
                 ctx.stroke();
+                //cierra una linea poligonal  o linea curva
                 ctx.closePath();
             }
         }
