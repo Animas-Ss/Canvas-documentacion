@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Animas-Sosa</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <button id="randomizeButton">Randomize</button>
+        <div>
+            <input id="spread" type="range" min="0.3" max="3.1" step="0.01" value="1">
+            <label for="spread">Spread:</label>
+        </div>
+        <div>
+            <input id="sides" type="range" min="2" max="22" step="1" value="5">
+            <label for="sides">Sides:</label>
+        </div>
+        <button id="resetButton">Reinicio</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

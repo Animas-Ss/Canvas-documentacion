@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+}
+#canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+#controls{
+    position: absolute;
+    padding: 10px;
+    border: 2px solid white;
+    left: 20px;
+    top: 20px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.15);
+}
+button{
+    padding: 10px 40px;
+    width: 225px;
+}
+
+label, input {
+    color: white;
+    font-size: 15px;
+}
