@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas{
+    background: linear-gradient(120deg,#151515, #30153f);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
