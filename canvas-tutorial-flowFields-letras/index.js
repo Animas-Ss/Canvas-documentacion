@@ -12,7 +12,6 @@ canvas.height = 500;
 console.log(ctx);
 ctx.fillStyle = "white";
 ctx.strokeStyle = "white";
-ctx.lineWidth = 1;
 ctx.lineCap = 'round';
 
 //una linea con canvas en el lienzo
@@ -63,6 +62,7 @@ class Particle {
         for (let i = 0; i < this.history.length; i++) {
             //colocamos el metodo apra marcarle donde mover la linea creada
             context.lineTo(this.history[i].x, this.history[i].y);
+            
         }
         //para ponerle color a las lineas creadas
         context.strokeStyle = this.color;
